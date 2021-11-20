@@ -1,0 +1,43 @@
+application-description: '@project.description@:Employee Managment System'
+application-version: '@project.version:0.0.1-SNAPSHOT'
+
+spring:
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    initialization-mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      javax:
+        persistence:
+          schema-generation:
+            create-source: metadata
+            scripts:
+              action: create
+              create-target: create.sql
+      generate-ddl: 'true'
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: 'true'
+      path: /h2
+      hibernate:
+        generate_statistics: 'false'
+        format_sql: 'true'
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: 'true'
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+springdoc:
+  //use-fqn: 'true'
+  swagger-ui:
+    path: /swagger-ui-ems.html
+  //  operationsSorter: method
+  //  show-common-extensions: 'true'
+  //  show-extensions: 'true'
+
+  
