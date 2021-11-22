@@ -569,3 +569,5 @@ https://github.com/MuzeeburRahman/ems
    }
 }
 ```
+###Data model ER
+![alt text](https://github.com/MuzeeburRahman/ems/blob/main/ER.png.png?raw=true)
