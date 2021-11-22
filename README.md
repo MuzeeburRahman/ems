@@ -20,7 +20,7 @@ https://github.com/MuzeeburRahman/ems
 ##### Note: Please add department before employee
 ## Running the Application on Docker
 - Step1: git clone https://github.com/MuzeeburRahman/ems.git
-- Stept2: User/git/ems:$  **dokcer build -t ems .**
+- Stept2: User/git/ems:$  **dokcer build -t ems  . **
 - Stept2: User/git/ems:$  **docker run  -p 80:80 ems**
 ##  Application URLS Docker
 - [OpenAPi Swagger](http://localhost:80/swagger-ui-ems.html)
