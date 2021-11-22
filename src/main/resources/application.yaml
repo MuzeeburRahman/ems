@@ -36,8 +36,8 @@ springdoc:
   //use-fqn: 'true'
   swagger-ui:
     path: /swagger-ui-ems.html
-  //  operationsSorter: method
-  //  show-common-extensions: 'true'
-  //  show-extensions: 'true'
+    operationsSorter: method
+    show-common-extensions: 'true'
+    show-extensions: 'true'
 
   
