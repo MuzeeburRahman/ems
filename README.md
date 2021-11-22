@@ -18,6 +18,15 @@ https://github.com/MuzeeburRahman/ems
 - [h2 Console](http://localhost:8080/h2)
 - [actuator health](http://localhost:8080/actuator/health)
 ##### Note: Please add department before employee
+## Running the Application on Docker
+- Step1: git clone https://github.com/MuzeeburRahman/ems.git
+- Stept2: User/git/ems:$  **dokcer build -t ems .**
+- Stept2: User/git/ems:$  **docker run  -p 80:80 ems**
+##  Application URLS Docker
+- [OpenAPi Swagger](http://localhost:80/swagger-ui-ems.html)
+- [h2 Console](http://localhost:80/h2)
+- [actuator health](http://localhost:80/actuator/health)
+##### Note: Please add department before employee
 ## Design Specification
 ### System Architcure
 ![alt text](https://github.com/MuzeeburRahman/ems/blob/main/ems-%20arch.png?raw=true)
